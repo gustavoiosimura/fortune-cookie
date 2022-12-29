@@ -72,7 +72,7 @@ class App extends Component{
   sortPhrase(){
     let state = this.state;
     let sortIndex = Math.floor(Math.random() * this.phrases.length);
-    state.sortedPhrase = this.phrases[sortIndex];
+    state.sortedPhrase = '"'+this.phrases[sortIndex]+'"';
     this.setState(state)
     console.log(sortIndex)
   }
