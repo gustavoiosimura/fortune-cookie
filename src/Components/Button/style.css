@@ -1,0 +1,19 @@
+button{
+    background-color: #b39363;
+    color:black;
+    font-weight: 700;
+    text-transform: uppercase;
+    border:none;
+    padding: 10px 35px;
+    border-radius: 5px;
+
+}
+
+.phrase{
+    text-align: center;
+    text-decoration: underline;
+}
+
+body{
+    background:rgb(244, 244, 244);
+}
