@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Components/Button';
+import Quote from './Components/Quote';
 import './style.css';
 
 class App extends Component{
@@ -85,13 +86,13 @@ class App extends Component{
 
   render(){
     return(
-      <div class="container">
+      <div className="container">
         <img alt="Fortune Cookie" src={require('./assets/game-fortune-cookie.webp')} />
         <h2>Good luck!</h2>
         <Button content="Crack Cookie" action={this.sortPhrase} />
         {this.state.sortedPhrase !== '' && 
-        <div class="container">
-          <h1 class="phrase">{this.state.sortedPhrase}</h1>
+        <div className="container">
+          <Quote content={this.state.sortedPhrase} />
           <Button content="Clean" action={this.clean} />
         </div>
         } 
